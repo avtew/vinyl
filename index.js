@@ -16,7 +16,7 @@ const playlist = [
     {song: './assets/audio/15.mp3', cover: './assets/img/cover-3.jpg', title: 'Песенка Крокодила Гены', artist: 'Владимир Ферапонтов', album: 'Чебурашка'},
     {song: './assets/audio/16.mp3', cover: './assets/img/cover-3.jpg', title: 'Голубой вагон', artist: 'Владимир Ферапонтов', album: 'Шапокляк'},
     {song: './assets/audio/17.mp3', cover: './assets/img/cover-3.jpg', title: 'Чебурашка', artist: 'Клара Румянова', album: 'Чебурашка'},
-    {song: './assets/audio/18.mp3', cover: './assets/img/cover-3.jpg', title: 'Песня Шапокляк', artist: 'Владимир Раутбарт', album: 'Крокодил Гена'}
+    {song: './assets/audio/18.mp3', cover: './assets/img/cover-3.jpg', title: 'Песня Шапокляк', artist: 'Владимир Раутбарт', album: 'Крокодил Гена'},
 ]
 
 const vinyl = document.querySelector('.vinyl-img');
