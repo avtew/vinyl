@@ -379,7 +379,7 @@ a:hover {
 
 .container-footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
     padding: 0 20px 20px 20px;

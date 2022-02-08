@@ -1,9 +1,22 @@
-console.log('Самооценка 70/70\n1. Вёрстка (10)\n2. Кнопка Play/Pause (10)\n3. При кликах по кнопкам "Вперёд" и "Назад" переключается проигрываемый аудиотрек (10)\n4.При смене аудиотрека меняется изображение - обложка аудиотрека (10)\n5.Прогресс-бар отображает прогресс проигрывания текущего аудиотрека (10)\n6. Отображается продолжительность аудиотрека и его текущее время проигрывания (10)\n7. Очень высокое качество оформления приложения и/или дополнительный не предусмотренный в задании функционал, улучшающий качество приложения (10).\nКомментарии: реализовал функции управления громкостью, зацикливание трека и случайный выбор трека');
-
 const playlist = [
-    {song: './assets/audio/song-1.mp3', cover: './assets/img/cover-1.jpg', title: 'Песня бременских музыкантов', artist: 'Олег Анофриев', album: 'Бременские музыканты', year: '1969'},
-    {song: './assets/audio/song-2.mp3', cover: './assets/img/cover-2.jpg', title: 'Луч солнца золотого', artist: 'Муслим Магомаев', album: 'По следам бременских музыкантов', year: '1973'},
-    {song: './assets/audio/song-3.mp3', cover: './assets/img/cover-2.jpg', title: 'Песня заграничных музыкантов', artist: 'Вокальный ансамбль', album: 'По следам бременских музыкантов', year: '1973'},
+    {song: './assets/audio/1.mp3', cover: './assets/img/cover-1.jpg', title: 'Песня бременских музыкантов', artist: 'Олег Анофриев', album: 'Бременские музыканты'},
+    {song: './assets/audio/2.mp3', cover: './assets/img/cover-1.jpg', title: 'Дуэт Трубадура и Принцессы', artist: 'Олег Анофриев, Эльмира Жерздева', album: 'Бременские музыканты'},
+    {song: './assets/audio/3.mp3', cover: './assets/img/cover-1.jpg', title: 'Говорят мы бяки-буки', artist: 'Олег Анофриев', album: 'Бременские музыканты'},
+    {song: './assets/audio/4.mp3', cover: './assets/img/cover-1.jpg', title: 'Ох, рано встает охрана', artist: 'Анатолий Горохов и вокальный ансамбль', album: 'Бременские музыканты'},
+    {song: './assets/audio/5.mp3', cover: './assets/img/cover-1.jpg', title: 'Песня разбойников', artist: 'Олег Анофриев', album: 'Бременские музыканты'},
+    {song: './assets/audio/6.mp3', cover: './assets/img/cover-1.jpg', title: 'Куда ты, тропинка, меня привела', artist: 'Олег Анофриев', album: 'Бременские музыканты'},
+    {song: './assets/audio/7.mp3', cover: './assets/img/cover-2.jpg', title: 'Песня сыщика', artist: 'Муслим Магомаев', album: 'По следам бременских музыкантов'},
+    {song: './assets/audio/8.mp3', cover: './assets/img/cover-2.jpg', title: 'Такая - сякая', artist: 'Геннадий Гладков и вокальный ансамбль', album: 'По следам бременских музыкантов'},
+    {song: './assets/audio/9.mp3', cover: './assets/img/cover-2.jpg', title: 'Луч солнца золотого', artist: 'Муслим Магомаев', album: 'По следам бременских музыкантов'},
+    {song: './assets/audio/10.mp3', cover: './assets/img/cover-2.jpg', title: 'Ничего я не хочу', artist: 'Геннадий Гладков, Эльмира Жерздева', album: 'По следам бременских музыкантов'},
+    {song: './assets/audio/11.mp3', cover: './assets/img/cover-2.jpg', title: 'По-другому не желаем жить', artist: 'Муслим Магомаев и вокальный ансамбль', album: 'По следам бременских музыкантов'},
+    {song: './assets/audio/12.mp3', cover: './assets/img/cover-2.jpg', title: 'Песня заграничных музыкантов', artist: 'Анатолий Горохов и вокальный ансамбль', album: 'По следам бременских музыкантов'},
+    {song: './assets/audio/13.mp3', cover: './assets/img/cover-2.jpg', title: 'Баю баюшки баю', artist: 'Анатолий Горохов и вокальный ансамбль', album: 'По следам бременских музыкантов'},
+    {song: './assets/audio/14.mp3', cover: './assets/img/cover-2.jpg', title: 'Ничего на свете лучше нету', artist: 'Анатолий Горохов, Муслим Магомаев', album: 'По следам бременских музыкантов'},
+    {song: './assets/audio/15.mp3', cover: './assets/img/cover-3.jpg', title: 'Песенка Крокодила Гены', artist: 'Владимир Ферапонтов', album: 'Чебурашка'},
+    {song: './assets/audio/16.mp3', cover: './assets/img/cover-3.jpg', title: 'Голубой вагон', artist: 'Владимир Ферапонтов', album: 'Шапокляк'},
+    {song: './assets/audio/17.mp3', cover: './assets/img/cover-3.jpg', title: 'Чебурашка', artist: 'Клара Румянова', album: 'Чебурашка'},
+    {song: './assets/audio/18.mp3', cover: './assets/img/cover-3.jpg', title: 'Песня Шапокляк', artist: 'Владимир Раутбарт', album: 'Крокодил Гена'}
 ]
 
 const vinyl = document.querySelector('.vinyl-img');
