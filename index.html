@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/favicon.ico">
+    <title>Vinyl</title>
+</head>
+<body>
+    <header class="container-header">
+        <div class="logo"></div>
+        <span class="title">Vinyl</span>
+    </header>
+    <main class="container-main">
+        <div class="vinyl-img"></div>
+        <img src="./assets/img/cover-0.jpg" class="cover">
+        <div class="point"></div>
+        <div class="container-controls">
+            <div class="song-info">
+                <div class="artist-title"></div>
+                <div class="song-title"></div>
+                <div class="album-info">
+                    <span class="album-title"></span>
+                    <span></span>
+                    <span class="year"></span>
+                </div>
+            </div>
+            <div class="block-controls">
+                <div class="block-progress">
+                    <input type="range" min="0" max="100" step="0.05" value="0" class="prog-bar">
+                    <div class="timers">
+                        <span class="time"></span>
+                        <span class="duration"></span>
+                    </div>
+                </div>
+                <div class="block-buttons">
+                    <div class="optns-btns">
+                        <button class="btn-shuffle"></button>
+                        <button class="btn-loop"></button>
+                    </div>
+                    <div class="ctrl-btns">
+                        <button class="btn-prev"></button>
+                        <button class="btn-play"></button>
+                        <button class="btn-next"></button>
+                    </div>
+                    <div class="vol-btns">
+                        <button class="btn-vol"></button>
+                        <input type="range" min="0" max="1" step="0.01" value="1" class="vol-bar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-footer">
+        <a href="https://rs.school/js-stage0/"><img src="./assets/svg/rss-logo.svg" class="rss-logo"></a>
+        <div class="copy">
+            <div class="gh">
+                <div class="gh-logo"></div>
+                <span><a href="https://github.com/avtew">avtew</a></span>
+            </div>
+            <span>2022</span>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
